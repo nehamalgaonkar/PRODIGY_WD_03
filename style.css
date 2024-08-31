@@ -1,0 +1,70 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6b71e5, #8f94fb);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #d9aaaa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tic-Tac-Toe Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #e3e3e3;
+    transform: scale(1.05);
+}
+
+/* Button and Status Styles */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8f94fb;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
